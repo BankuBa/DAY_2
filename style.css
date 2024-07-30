@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.animation{
-  background: linear-gradient(45deg , rgb(59, 59, 100) ,  rgb(7, 57, 223) , rgb(71, 42, 64));
+.animation {
+  background: linear-gradient(45deg, rgb(59, 59, 100), rgb(7, 57, 223), rgb(71, 42, 64));
   width: 100%;
   height: 100vh;
   display: flex;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.loading{
+.loading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,53 +22,48 @@
   font-weight: 100%;
 }
 
-.load{
- display: flex;
- align-items: center;
- justify-content: space-evenly;
- width: 15rem;
- height: 4rem;
-
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15rem;
+  height: 4rem;
 }
-.dot{
+.dot {
   background-color: #fff;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin: 1rem;
-  animation: load 0.9s ease infinite ;
+  animation: load 0.9s ease infinite;
 }
 
-.dot.one{
-animation-delay: 0.3s;
+.dot.one {
+  animation-delay: 0.3s;
 }
-.dot.two{
-animation-delay: 0.4s;
+.dot.two {
+  animation-delay: 0.4s;
 }
-.dot.three{
- animation-delay: 0.5s;
+.dot.three {
+  animation-delay: 0.5s;
 }
-.dot.four{
-animation-delay: 0.6s;
+.dot.four {
+  animation-delay: 0.6s;
 }
-
-
 
 @keyframes load {
-  0%{
-    width:30px;
+  0% {
+    width: 30px;
     height: 30px;
   }
-  
-  50%{
-    width : 20px ;
+
+  50% {
+    width: 20px;
     height: 20px;
   }
 }
 
-
-
-.loading_bar{
+.loading_bar {
   width: 25rem;
   height: 0.8rem;
   margin-top: 4rem;
@@ -76,35 +71,55 @@ animation-delay: 0.6s;
   overflow: hidden;
 }
 
-.bar{
+.bar {
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg,rgb(67, 245, 67), rgb(217, 241, 217));
-  animation: loading 1s ease  infinite  ;
+  background: linear-gradient(45deg, rgb(67, 245, 67), rgb(217, 241, 217));
+  animation: loading 0.6s ease infinite;
 }
 
 @keyframes loading {
-  0%{
-    width:0%;
+  0% {
+    width: 0%;
   }
 
-    25%{
-    width:25%;
+  10% {
+    width: 10%;
   }
-  
 
-    50%{
-    width:50%;
+  20% {
+    width: 20%;
   }
-  
 
-    75%{
-    width:75%;
+  30% {
+    width: 30%;
   }
-  
-    100%{
-    width:100%;
+
+  40% {
+    width: 40%;
   }
-  
-  
+
+  50% {
+    width: 50%;
+  }
+
+  60% {
+    width: 60%;
+  }
+
+  70% {
+    width: 70%;
+  }
+
+  80% {
+    width: 80%;
+  }
+
+  90% {
+    width: 90%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
